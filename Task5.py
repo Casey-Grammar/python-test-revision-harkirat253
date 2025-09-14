@@ -1,19 +1,14 @@
-# Task 5 FIFA World Cup
-# With 9 FIFA World Cup wins between them, Brazil and Italy two of
-# the most successful soccer countries in the world. Write a program
-# that works out who won their latest soccer match, given the scores
-# of both teams.
+def soccer_match_outcome(italy_score, brazil_score):
+    if italy_score > brazil_score:
+        return "Italy won the match."
+    elif brazil_score > italy_score:
+        return "Brazil won the match."
+    else:
+        return "The match was a draw."
 
-def main():
-    #Write your code here
-   
+print("Enter the scores for the latest soccer match between Brazil and Italy:")
+italy_score = int(input("Italy score: "))
+brazil_score = int(input("Brazil score: "))
 
-
-    # End of your code here
-
-
-
-
-
-if __name__ == '__main__':
-    main()
+outcome = soccer_match_outcome(italy_score, brazil_score)
+print(outcome)
