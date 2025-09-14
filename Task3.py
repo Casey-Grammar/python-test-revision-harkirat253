@@ -1,12 +1,12 @@
-# Task 3: Dog Years
-# Assume that a dog year is 7 human years. 
-# Write a program that asks the user
-def main():
-    #Write your code for input here
-    
+def dog_to_human_age(dog_years):
+    human_age = dog_years * 7
+    return human_age
 
+# Get user input for dog's age
+dog_years = int(input("Dog years: "))
 
-    # End of your code for input here
+# Convert dog years to human years
+human_age = dog_to_human_age(dog_years)
 
-if __name__ == '__main__':
-    main()
+# Print the result
+print(f"Human age = {human_age}")
