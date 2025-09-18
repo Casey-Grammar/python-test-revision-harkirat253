@@ -1,28 +1,17 @@
-# Task 8 Call signs
-# A portmanteau is a word made by combining parts of two other
-# words. This could be used to create call signs for an online
-# group.
+# Ask user for first and last name
+full_name = input("First and Last Name? ")
 
-#For example, david and jones would make daones.
+# Split input into first name and last name
+first, last = full_name.split()
 
-#Let's make some call signs!
+# Take first 2 letters of first name
+part1 = first[:2]
 
-#Write a program that asks a user for their first name and last
-#name and then takes the first two letters of the first name and
-#the last four letters of the last name and combines them to make
-#a new call sign. (N.B. we won't test your program with any input
-#that's too short!)
+# Take last 4 letters of last name
+part2 = last[-4:]
 
-def main():
-    #Write your code here
-    
+# Combine them
+call_sign = part1 + part2
 
-
-    # End of your code here
-
-
-
-
-
-if __name__ == '__main__':
-    main()
+# Output the result
+print("The new call sign is:", call_sign)
