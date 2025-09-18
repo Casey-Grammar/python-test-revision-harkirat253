@@ -1,20 +1,11 @@
-# Task 7 Count down
-# You've developed a healthy interest in space exploration and want
-# to get ready for your own rocket launch, starting with the launch
-# count-down sequence. You're not sure how long your engines will
-# take to flare up (you haven't built the rocket yet!) so you decide to
-# write a program that can read in the number to count down from!
+# Ask the user for the countdown start number
+start = int(input("Time to launch: "))
 
-def main():
-    #Write your code here
-    
+print("Counting down ...")
 
-    
-    # End of your code here
+# Loop from start down to 1
+for i in range(start, 0, -1):
+    print(f"{i} ...")
 
-
-
-
-
-if __name__ == '__main__':
-    main()
+# After countdown finishes
+print("Blast Off!")
