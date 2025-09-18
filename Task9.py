@@ -1,19 +1,9 @@
-# Task 9 Cat problem
-# You've collected too many cats. Write a program to count how
-# many cats you have by reading in their names. All your cats only
-# have first names, with no spaces.
+# Read in the cat names
+cat_names = input("Enter the cat names separated by spaces: ").split()
 
-def main():
-    #Write your code here
-    
+# Count the number of cats
+num_cats = len(cat_names)
 
-
-
-    # End of your code here
-
-
-
-
-
-if __name__ == '__main__':
-    main()
+# Print the result
+print(f"Cats: {' '.join(cat_names)}")
+print(f"You have {num_cats} cats.")
